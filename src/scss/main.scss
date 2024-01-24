@@ -2,12 +2,14 @@
   font-weight: 400;
   font-family: BarlowCondensed;
   src: url('../../public/fonts/BarlowCondensed-Regular.ttf');
+  font-display: swap
 }
 
 @font-face {
   font-weight: 700;
   font-family: BarlowCondensed;
   src: url('../../public/fonts/BarlowCondensed-Bold.ttf');
+  font-display: swap
 }
 
 body {
