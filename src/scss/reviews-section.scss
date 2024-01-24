@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (width <= 1100px) {
+@media screen and (max-width: 1100px) {
   .reviews-section {
     &__content {
       min-height: 50vh;
@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (width <= 600px) {
+@media screen and (max-width: 600px) {
   .reviews-section {
     &__title {
       margin-bottom: 30px;

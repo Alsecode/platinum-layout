@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (width <= 992px) {
+@media screen and (max-width: 992px) {
   .service {
     width: 200px;
     height: 220px;
@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (width <= 568px) {
+@media screen and (max-width: 568px) {
   .service {
     width: 160px;
     height: 200px;

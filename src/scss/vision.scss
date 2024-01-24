@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (width <= 1600px) {
+@media screen and (max-width: 1600px) {
   .vision {
     &__paragraph {
       font-size: 26px;
@@ -42,7 +42,7 @@
 }
 
 
-@media screen and (width <= 992px) {
+@media screen and (max-width: 992px) {
   .vision {
     &__title {
       margin: 40px 0 0;
@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (width <= 568px) {
+@media screen and (max-width: 568px) {
   .vision {
     &__title {
       margin: 20px 0 0;

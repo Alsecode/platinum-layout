@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (width <= 1600px) {
+@media screen and (max-width: 1600px) {
   .services-list {
     &__title {
       margin: 30px 0;
@@ -28,7 +28,7 @@
 }
 
 
-@media screen and (width <= 992px) {
+@media screen and (max-width: 992px) {
   .services-list {
     &__container {
       max-width: 700px;
@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (width <= 568px) {
+@media screen and (max-width: 568px) {
   .services-list {
     &__title {
       margin: 20px 0;
