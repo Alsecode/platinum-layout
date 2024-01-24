@@ -55,6 +55,11 @@
 
 @media screen and (max-width: 600px) {
   .reviews-section {
+    &__button {
+      width: 10px;
+      height: 10px;
+    }
+
     &__title {
       margin-bottom: 30px;
     }
