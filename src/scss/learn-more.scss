@@ -11,6 +11,8 @@
   background: $secondary;
   cursor: pointer;
 
+  text-decoration: none;
+
   &::after {
     position: absolute;
     top: 35%;
@@ -29,7 +31,7 @@
   .learn-more {
     padding: 4px 15px;
 
-    font-size: 8px;
+    font-size: 12px;
 
     &::after {
       display: none;
