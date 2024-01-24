@@ -1,0 +1,46 @@
+.mobile-menu {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 40px 25px 25px;
+
+  font-size: 14px;
+
+  list-style: none;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      top: 5px;
+      right: 2px;
+
+      width: 6px;
+      height: 10px;
+
+      background: url('../../public/images/menu-arrow.svg');
+
+      content: '';
+    }
+  }
+
+  &__link {
+    color: $secondary;
+    text-decoration: none;
+
+    &_special {
+      font-weight: 700;
+    }
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  z-index: 1;
+}

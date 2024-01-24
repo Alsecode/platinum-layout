@@ -1,0 +1,71 @@
+.vision {
+  &__content {
+    background-image: url('../../public/images/vision-bg.png');
+  }
+
+  &__title {
+    margin-top: 50px;
+  }
+
+  &__line {
+    width: 60%;
+    height: 3px;
+
+    background: $primary;
+
+    &_top {
+      margin-top: 80px;
+    }
+
+    &_bottom {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__paragraph {
+    width: 75%;
+    margin: 20px 0 60px;
+
+    font-size: 32px;
+    font-family: BarlowCondensed, Helvetica, sans-serif;
+    letter-spacing: 1.92px;
+    text-align: center;
+  }
+}
+
+@media screen and (width <= 1600px) {
+  .vision {
+    &__paragraph {
+      font-size: 26px;
+    }
+  }
+}
+
+
+@media screen and (width <= 992px) {
+  .vision {
+    &__title {
+      margin: 40px 0 0;
+    }
+
+    &__paragraph {
+      margin: 15px 0 40px;
+
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (width <= 568px) {
+  .vision {
+    &__title {
+      margin: 20px 0 0;
+    }
+
+    &__paragraph {
+      margin: 15px 0 20px;
+
+      font-size: 14px;
+    }
+  }
+}

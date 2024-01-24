@@ -1,0 +1,120 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  &__menu {
+    display: flex;
+    gap: 56px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    &-item {
+      font-size: 25px;
+    }
+
+    &-link {
+      display: block;
+
+      color: $primary;
+      text-decoration: none;
+
+      transition: 0.2s;
+
+      &:hover {
+          transform: scale(1.075);
+      }
+    }
+  }
+}
+
+@media screen and (width <= 1360px) {
+  .footer {
+    padding: 30px;
+
+    &__menu {
+      gap: 45px;
+
+      &-item {
+        font-size: 22px;
+      }
+    }
+
+    &__logo {
+      height: 130px;
+    }
+
+    &__icons {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (width <= 1100px) {
+  .footer {
+    &__menu {
+      gap: 35px;
+
+      &-item {
+        font-size: 18px;
+      }
+    }
+
+    &__logo {
+      height: 110px;
+    }
+
+    &__icons {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (width <= 770px) {
+  .footer {
+    &__menu {
+      gap: 20px;
+
+      &-item {
+        font-size: 16px;
+      }
+    }
+
+    &__logo {
+      height: 70px;
+    }
+
+    &__icons {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (width <= 600px) {
+  .footer {
+    padding: 15px;
+
+    &__menu {
+      gap: 10px;
+
+      &-item {
+        font-size: 12px;
+      }
+    }
+
+    &__logo {
+      height: 40px;
+    }
+
+    &__icons {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

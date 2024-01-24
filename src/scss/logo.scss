@@ -1,0 +1,21 @@
+.logo {
+  height: 60px;
+
+  &_large {
+    height: 160px;
+  }
+
+  &_big {
+    height: 114px;
+  }
+
+  &_small {
+    height: 34px;
+  }
+
+  &_inverted {
+    filter: invert(1);
+  }
+
+  
+}

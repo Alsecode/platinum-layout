@@ -1,0 +1,59 @@
+.header {
+    background: $primary;
+
+    &__desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 15px;
+
+        background: $primary;
+    }
+
+    &__mobile {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+		&__mobile-nav {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			display: none;
+			width: 45%;
+			height: auto;
+            border-radius: 10%;
+
+			background: $primary;
+		}
+
+    &__special-link {
+        color: $secondary-dark;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+		&__checkbox {
+			display: none;
+		}
+}
+
+@media screen and (width <= 768px) {
+  .header {
+    background: none;
+
+    &__desktop {
+      display: none;
+		}
+
+		&__mobile {
+			display: flex;
+
+			background: transparent;
+		}
+	}
+}

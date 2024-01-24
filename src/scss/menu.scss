@@ -1,0 +1,51 @@
+.menu {
+    display: flex;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+
+    list-style: none;
+
+    &__item {
+        position: relative;
+
+        font-size: 18px;
+
+        &:not(:last-child)::after {
+            position: absolute;
+            top: 0;
+            right: -28px;
+
+            width: 2px;
+            height: 100%;
+
+            background-color: #000;
+
+            content: '';
+        }
+    }
+
+
+    &__link {
+        display: block;
+
+        color: $secondary;
+        text-decoration: none;
+
+        transition: 0.2s;
+
+        &:hover {
+            border-bottom: 2px $secondary-dark solid;
+
+            color: $secondary-dark;
+
+            transform: scale(1.075); 
+        }
+
+        &_active {
+          border-bottom: 2px $secondary solid;
+        }
+    }
+}

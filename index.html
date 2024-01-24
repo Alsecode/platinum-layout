@@ -1,11 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/scss/general.scss" />
+    <title>Platinum ProConstruction</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__desktop">
+          <img class="logo" src="./public/images/logo.svg" alt="logo"> 
+
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link menu__link_active" href="#">General</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="" class="header__special-link">Platinum Pro Moving</a>
+        </div>
+
+        <div class="header__mobile">
+          <img class="logo logo_small logo_inverted" src="./public/images/logo.svg" alt="logo">
+          <p class="header__current-title">General</p>
+          <input class="header__checkbox" type="checkbox" id="burger-toggle">
+          <label for="burger-toggle" id="burger-icon">
+            <img width="20px" src="./public/images/menu.svg">
+          </label>
+
+          <nav class="header__mobile-nav" id="burger-menu">
+            <label class="close-btn" for="burger-toggle" id="close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <rect x="11.077" width="1.30543" height="15.6651" rx="0.652713" transform="rotate(45 11.077 0)" fill="#27374D"/>
+                <rect y="0.923065" width="1.30543" height="15.6651" rx="0.652713" transform="rotate(-45 0 0.923065)" fill="#27374D"/>
+                </svg>
+            </label>
+            <ul class="mobile-menu">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">General</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Services</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">About us</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Contact us</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link_special" href="#">Platinum Pro Moving</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="offer">
+        <div class="bg-center offer__content">
+          <div class="logo-wrapper">
+            <img class="logo logo_big" src="./public/images/logo.svg" alt="logo"> 
+          </div>
+          <div class="offer__main-heading">Platinum ProConstruction</div>
+          <p class="offer__description">Committed to construction, dedicated to you.</p>
+          <a class="button offer__button" href="#">Contact us</a>
+        </div>
+      </div>
+
+      <div class="services-list">
+        <div class="bg-center services-list__content">
+          <h2 class="title services-list__title">Our Services</h2>
+          <div class="services-list__container">
+            <div class="service">
+              <div class="service__image-container">
+                <img class="service__image" src="./public/images/services-images/metal-roofing.svg">
+              </div>
+              <p class="service__title">Metal roofing</p>
+              <div class="service__description">Metal roofing offers a resilient and sleek solution for your home. Its longevity and modern appeal make it an excellent choice for protecting and enhancing your property.</div>
+              <a class="learn-more service__button">Learn More</a>
+            </div>
+
+            <div class="service">
+              <div class="service__image-container">
+                <img class="service__image" src="./public/images/services-images/painting-drywalls.svg">
+              </div>
+              <p class="service__title">Painting / Drywalls</p>
+              <div class="service__description">Elevate your interiors with our expert painting and drywall services. We bring life to your walls, adding color and texture to create a fresh, polished look.</div>
+              <a class="learn-more service__button">Learn More</a>
+            </div>
+
+            <div class="service">
+              <div class="service__image-container">
+                <img class="service__image" src="./public/images/services-images/windows-doors.svg">
+              </div>
+              <p class="service__title">Windows / Doors</p>
+              <div class="service__description">Enhance your home with our precision windows and doors installation. Experience a perfect blend of aesthetics, security, and energy efficiency for your living spaces.</div>
+              <a class="learn-more service__button">Learn More</a>
+            </div>
+
+            <div class="service">
+              <div class="service__image-container">
+                <img class="service__image" src="./public/images/services-images/landscaping.svg">
+              </div>
+              <p class="service__title">Landscaping</p>
+              <div class="service__description">Our landscaping services craft outdoor havens. Elevate your surroundings with expert design, lush greenery, and serene elements, fostering a harmonious connection with the outdoors.</div>
+              <a class="learn-more service__button">Learn More</a>
+            </div>
+
+            <div class="service">
+              <div class="service__image-container">
+                <img class="service__image" src="./public/images/services-images/flooring.svg">
+              </div>
+              <p class="service__title">Flooring</p>
+              <div class="service__description">Our flooring solutions redefine spaces. From elegant hardwood to versatile tile, we transform floors into stunning canvases that marry style with durability.</div>
+              <a class="learn-more service__button">Learn More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="vision">
+        <div class="bg-center bg-center_content vision__content">
+          <div class="vision__line vision__line_top"></div>
+          <h2 class="title title_white vision__title">Our Vision</h2>
+          <p class="vision__paragraph">To be a leading and innovative construction company that transforms skylines, enhances communities, and builds a sustainable future for generations to come. We envision a world where our projects serve as timeless landmarks, setting new standards for quality, safety, and environmental responsibility. Our commitment to excellence, client satisfaction, and continuous innovation shall position us as the construction partner of choice, earning the trust of our stakeholders and leaving a positive impact on every life touched by our work.</p>
+          <div class="vision__line vision__line_bottom"></div>
+        </div>
+      </div>
+
+      <div class="reviews-section">
+        <div class="bg-center reviews-section__content">
+          <h2 class="title reviews-section__title">Reviews</h2>
+          <div class="reviews-section__reviews">
+            <div class="review" data-review-status="prev">
+              <img class="review__quote" src="./public/images/quotes.svg" alt="logo">
+              <div class="review__text">
+                I recently had the pleasure of working with Platinum Pro Construction guys on a home renovation project, and I couldn't be more impressed with their services. From start to finish, they demonstrated top-notch workmanship and professionalism that exceeded my expectations.
+              </div>
+            </div>
+            <div class="review" data-review-status="next">
+              <img class="review__quote" src="./public/images/quotes.svg" alt="logo">
+              <div class="review__text">
+                I had the pleasure of working with Platinum Pro on a small renovation project, and I'm blown away by their craftsmanship. The attention to detail and commitment to quality were evident in every aspect of the project.
+              </div>
+            </div>
+            <div class="review review_active" data-review-status="current">
+              <img class="review__quote" src="./public/images/quotes.svg" alt="logo">
+              <div class="review__text">
+                I hired Platinum Pro Construction for a home renovation project, and I'm thrilled with the results. Their team was professional, efficient, and their workmanship was top-notch. The project was completed on time and within budget. I highly recommend this company for any construction needs. They exceeded my expectations!
+              </div>
+            </div>
+          </div>
+          <div class="reviews-section__buttons">
+            <button class="reviews-section__button" data-review-id="1"></button>
+            <button class="reviews-section__button" data-review-id="2"></button>
+            <button class="reviews-section__button" data-review-id="3"></button>
+            <button class="reviews-section__button reviews-section__button_active" data-review-id="4"></button>
+            <button class="reviews-section__button" data-review-id="5"></button>
+            <button class="reviews-section__button" data-review-id="6"></button>
+            <button class="reviews-section__button" data-review-id="7"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <img class="logo logo_large logo_inverted footer__logo" src="./public/images/logo.svg" alt="logo">
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">General</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Services</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <img class="footer__icons" src="./public/images/social-media-icons.svg"></img>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

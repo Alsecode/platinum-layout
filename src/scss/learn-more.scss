@@ -1,0 +1,38 @@
+.learn-more {
+  position: relative;
+
+  padding: 4px 60px 4px 20px;
+  border-radius: 38px;
+
+  color: $primary;
+  font-size: 13px;
+  line-height: 1rem;
+
+  background: $secondary;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: 35%;
+    right: 15px;
+
+    width: 35px;
+    height: 8px;
+
+    background: url('../../public/images/button-arrow.svg');
+
+    content: '';
+  }
+}
+
+@media screen and (width <= 768px) {
+  .learn-more {
+    padding: 4px 15px;
+
+    font-size: 8px;
+
+    &::after {
+      display: none;
+    }
+  }
+}

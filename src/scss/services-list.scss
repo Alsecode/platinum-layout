@@ -1,0 +1,45 @@
+.services-list {
+  &__content {
+    background-image: url('../../public/images/services-list-bg.png');
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+    max-width: 950px;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  &__title {
+    margin: 80px 0;
+  }
+}
+
+@media screen and (width <= 1600px) {
+  .services-list {
+    &__title {
+      margin: 30px 0;
+    }
+  }
+}
+
+
+@media screen and (width <= 992px) {
+  .services-list {
+    &__container {
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (width <= 568px) {
+  .services-list {
+    &__title {
+      margin: 20px 0;
+    }
+  }
+}
