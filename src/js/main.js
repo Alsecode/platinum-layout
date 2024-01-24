@@ -1,20 +1,6 @@
-// Бургер-меню
-const toggle = document.querySelector('#burger-toggle');
-const menu = document.querySelector('.header__mobile-nav');
-
-toggle.addEventListener('change', () => {
-  if (toggle.checked) {
-    menu.style.display = 'block';
-  } else {
-    menu.style.display = 'none';
-  }
-});
+import reviewsData from "../data/reviews.json" assert { type: 'json' };
 
 //Слайдер отзывов
-const url = 'src/data/reviews.json';
-
-const response = await fetch(url);
-const reviewsData = await response.json();
 const reviewsCount = Object.keys(reviewsData).length;
 
 const currentReview = document.querySelector('[data-review-status="current"] > .review__text');
@@ -48,4 +34,16 @@ controlButtons.forEach(btn => {
     }, 250);
   }
   )
+});
+
+// Бургер-меню
+const toggle = document.querySelector('#burger-toggle');
+const menu = document.querySelector('.header__mobile-nav');
+
+toggle.addEventListener('change', () => {
+  if (toggle.checked) {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
 });
